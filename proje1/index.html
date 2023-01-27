@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 600px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container {
+            background-image: url(img/Group\ 5741.png);
+            padding: 5%;
+            min-height: 800px;
+            text-align: center;
+        }
+
+        header {
+            min-height: 340px;
+            background-color: #F7F0E8;
+            padding: 3%;
+        }
+
+        #logo img {
+            width: 64px;
+            height: 21px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 3%;
+            list-style-type: none;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #432916;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #navbar-img img {
+            max-width: 100%;
+        }
+
+        #title h3 {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 17px;
+            letter-spacing: 5px;
+            color: #432916;
+        }
+
+        #title p {
+            margin-top: 6%;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            color: #432916;
+        }
+
+        /* section 1 */
+
+        section {
+            background-color: #fff;
+        }
+
+        #first {
+            padding: 5%;
+        }
+
+        #first img {
+            margin: 5%;
+        }
+
+        #first p {
+            font-weight: 400;
+            size: 12px;
+            line-height: 16px;
+            color: #432916;
+        }
+
+        span {
+            font-family: Montserrat;
+            color: #C48300;
+        }
+
+        hr {
+            color: #C7AD9F;
+            width: 75%;
+            margin-bottom: 5%;
+        }
+
+        #title2 h2 {
+            font-family: 'Petit Formal Script', cursive;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 32px;
+            color: #432916;
+            margin-bottom: 5%;
+        }
+
+        #card-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+        }
+
+        .card {
+            align-items: center;
+            width: 50%;
+            flex-wrap: wrap;
+        }
+
+        .card-img {
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+        }
+
+        .card-img img {
+            width: 100%;
+        }
+
+        .info h3 {
+            font-weight: 700;
+            size: 10px;
+            line-height: 14px;
+            margin: 5%;
+            color: #432916;
+            text-transform: uppercase;
+        }
+
+        .info p {
+            width: 50%;
+            margin: 4% auto;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #615F5E;
+        }
+
+        .info button {
+            background-color: #fff;
+            border: none;
+            margin-bottom: 5%;
+            font-size: 11px;
+            line-height: 13px;
+            color: #705645;
+            text-transform: uppercase;
+
+        }
+
+        .info button:hover {
+            text-decoration: underline;
+        }
+        #second {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            max-width: 525px;
+            background-color: #e9ebed;
+            padding: 5%
+;
+        }
+        #second #img-2 {
+            max-width: 229px;
+            height: 229px;
+        }
+        #img-2 img {
+            max-width: 100%;
+        }
+        #info-2 {
+            width: 131px;
+            height: 120px;
+        }
+        #info-2 h4 {
+            font-family: 'Petit Formal Script', cursive;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 32px;
+            color: #432916;
+            margin-bottom: 5%;
+        }
+        #info-2 p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color :#595959;
+        }
+        #info-2 button {
+            background-color: none;
+            color: #432916;
+            border: 1px solid #DCC29C;
+            margin-top: 8%;
+            padding: 4%;
+        }
+        /* Footer */
+        footer {
+            width:525px ;
+            height: 175px;
+            background-color: #432916;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly
+        }
+        #social ul li {
+            display: inline-block; 
+            margin-left: 4%;
+            margin-bottom: 5%;
+        }
+        #social ul li a img {
+            width: 33px;
+            height: 30px;
+        }
+        #info-3 p {
+           color: #fff;
+           font-size: 12px;
+           line-height: 20px; 
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="img/Group 5601.png" alt="">
+            </div>
+            <navbar class="navbar">
+                <ul>
+                    <li class="social"><a href="">Home</a></li>
+                    <li><a href="">New Additions</a></li>
+                    <li><a href="">Clarance</a></li>
+                    <li><a href="">Abaut Us</a></li>
+                </ul>
+            </navbar>
+            <div id="navbar-img">
+                <img src="img/Group 5760.png " alt="">
+            </div>
+            <div id="title">
+                <h3>to {storename}</h3>
+                <p>Elegance and quality no matter what your style</p>
+            </div>
+        </header>
+        <section>
+            <div id="first">
+                <img src="img/Group 5753.png" alt="">
+                <p>Use code <span>1234</span> on checkout to receive <br> <span>5% off</span> on your first purchase.
+                </p>
+            </div>
+            <center>
+                <hr>
+            </center>
+            <div id="title2">
+                <h2>New arrival</h2>
+                <div id="card-group">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/Group 5754.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>necklace</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua.</p>
+                            <button>shop now</button>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/Group 5755.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>earings</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua.</p>
+                            <button>shop now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="second">
+                <div id="img-2">
+                    <img src="img/Ellipse 410.png" alt="">
+                </div>
+                <div id="info-2">
+                    <h4>Rings</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua.</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="social">
+                <ul>
+                    <li class="social"><a href="#"><img src="img/Facebook_white.png"></img></a></li>
+                    <li class="social"><a href="#"><img src="img/Instagram_white.png"></img></a></li>
+                    <li class="social"><a href="#"><img src="img/Twitter_white.png"></img></a></li>
+                    <li class="social"><a href="#"><img src="img/Mail_white.png"></img></a></li>  
+                </ul>
+            <div id="info-3">
+                <p>Sent from Acme</p>
+                <p>Fake adress</p>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
